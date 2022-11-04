@@ -1,0 +1,9 @@
+{% if latest_director_list %}
+    <ul>
+    {% for director in latest_director_list %}
+        <li>{{director.first_name}} {{director.last_name}}</li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No directors are available</p>
+{% endif %}
